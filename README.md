@@ -221,3 +221,30 @@ Route::get('/debug-geo', function (\Illuminate\Http\Request $request) {
 ```
 
 3. Access `/debug-geo` in your browser and check for `HTTP_X_CONTINENT_NAME`, `HTTP_X_COUNTRY_NAME`, etc.
+
+
+## Helpers
+
+### Detect IP type
+
+Then you can use the detectIpType function like this:
+
+```php
+use MoveMoveApp\Maxmind\Enums\NetworkType;
+
+...
+
+$ip = '2001:0db8:85a3::8a2e:0370:7334';
+
+$type = detectIpType($ip);
+
+if ($type === NetworkType::IPV6) {
+    echo "IPv6 address detected.";
+} elseif ($type === NetworkType::IPV4) {
+    echo "IPv4 address detected.";
+} else {
+    echo "Invalid IP address.";
+}
+
+```
+

@@ -2,6 +2,8 @@
 
 namespace MoveMoveApp\Maxmind;
 
+use MoveMoveApp\Maxmind\Enums\NetworkType;
+
 class MaxmindService
 {
     protected array $headers;
@@ -252,6 +254,28 @@ class MaxmindService
     public function continentName(): ?string
     {
         return $this->get('continent_name');
+    }
+
+    /**
+     * Detect the type of an IP address.
+     *
+     * This method checks whether the given IP address is a valid IPv4 or IPv6 address.
+     * If the IP is not valid, it will return NetworkType::INVALID.
+     *
+     * @param string $ip
+     * @return NetworkType
+     */
+    function detectIpType(string $ip): NetworkType
+    {
+        if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
+            return NetworkType::IPV4;
+        }
+
+        if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
+            return NetworkType::IPV6;
+        }
+
+        return NetworkType::INVALID;
     }
 
     /**
