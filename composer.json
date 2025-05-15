@@ -1,0 +1,36 @@
+{
+    "name": "movemoveapp/maxmind",
+    "description": "A Laravel package for reading MaxMind GeoIP2 data passed from Nginx via FastCGI parameters. Supports automatic detection of location and ISP information using predefined headers, with full configuration support.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "movemove",
+        "maxmind",
+        "laravel",
+        "sdk",
+        "geo",
+        "isp",
+        "connection type"
+    ],
+    "version": "1.0.1",
+    "autoload": {
+        "psr-4": {
+            "MoveMoveApp\\Maxmind\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Kovalev",
+            "email": "d.kovalev@movemove.com.ru",
+            "homepage": "https://movemove.com.ru",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : "^8.0|^8.1|^8.2|^8.3|^8.4",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.5.1",
+        "guzzlehttp/psr7": "^2.5"
+    }
+}
