@@ -1,9 +1,9 @@
 # 🌍 Laravel MaxMind
-[![Latest Stable Version](http://poser.pugx.org/botgun/dadata/v)](https://packagist.org/packages/botgun/dadata)
-[![Total Downloads](http://poser.pugx.org/botgun/dadata/downloads)](https://packagist.org/packages/botgun/dadata)
-[![Latest Unstable Version](http://poser.pugx.org/botgun/dadata/v/unstable)](https://packagist.org/packages/botgun/dadata)
-[![License](http://poser.pugx.org/botgun/dadata/license)](https://packagist.org/packages/botgun/dadata)
-[![PHP Version Require](http://poser.pugx.org/botgun/dadata/require/php)](https://packagist.org/packages/botgun/dadata)
+[![Latest Stable Version](http://poser.pugx.org/movemoveapp/laravel-maxmind/v)](https://packagist.org/packages/movemoveapp/laravel-maxmind)
+[![Total Downloads](http://poser.pugx.org/movemoveapp/laravel-maxmind/downloads)](https://packagist.org/packages/movemoveapp/laravel-maxmind)
+[![Latest Unstable Version](http://poser.pugx.org/movemoveapp/laravel-maxmind/v/unstable)](https://packagist.org/packages/movemoveapp/laravel-maxmind)
+[![License](http://poser.pugx.org/movemoveapp/laravel-maxmind/license)](https://packagist.org/packages/movemoveapp/laravel-maxmind)
+[![PHP Version Require](http://poser.pugx.org/movemoveapp/laravel-maxmind/require/php)](https://packagist.org/packages/movemoveapp/laravel-maxmind)
 
 **Laravel MaxMind** is a simple and flexible package for accessing [MaxMind GeoIP2](https://maxmind.com/) data passed via Nginx FastCGI parameters.
 
